@@ -18,9 +18,9 @@ const Header = () => {
       <Grid
         container
         direction="row"
-        justifyContent="space-around"
+        justifyContent="space-between"
         alignItems="center"
-        sx={{ paddingTop: "15px" }}
+        sx={{ paddingTop: "15px", paddingX: "127px" }}
       >
         <Grid item>
           <HeaderItem icon={CheckMark} text="30-DAY SATISFACTION GUARANTEE" />

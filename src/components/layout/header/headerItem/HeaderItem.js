@@ -1,4 +1,3 @@
-import { AltRouteOutlined } from "@mui/icons-material";
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 
@@ -6,7 +5,7 @@ const HeaderItem = ({ icon, alt, text }) => {
   return (
     <Grid container direction="row" alignItems="center" spacing={1}>
       <Grid item>
-        <img src={icon} alt={AltRouteOutlined} />
+        <img src={icon} alt={alt} />
       </Grid>
       <Grid item>
         <Typography
