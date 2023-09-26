@@ -3,42 +3,71 @@ import React from "react";
 import Clarifion from "../../assets/logo/ca6d33ae7930758c0396996013437236.png";
 import McAfeeSecure from "../../assets/logo/Frame 1484578055.svg";
 import Norton from "../../assets/logo/norton-antivirus-logo 1.svg";
+import styled from "@emotion/styled";
+
+const Root = styled("div")(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  maxWidth: "1245px",
+  width: "100%",
+  margin: "30px",
+  [theme.breakpoints.down("sm")]: {
+    margin: "20px",
+  },
+}));
+
+const ClarifionLogo = styled("img")(({ theme }) => ({
+  width: "192px",
+  height: "36px",
+  [theme.breakpoints.down("sm")]: {
+    width: "107px",
+    height: "20px",
+  },
+}));
+
+const McAfeeSecureLogo = styled("img")(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    width: "44px",
+    height: "16px",
+  },
+}));
+
+const NortonLogo = styled("img")(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    width: "41px",
+    height: "16px",
+  },
+}));
+
+const LogoRoot = styled("div")(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "32px",
+  [theme.breakpoints.down("sm")]: {
+    gap: "16px",
+  },
+}));
 
 const LogoPanel = () => {
-  const style = {
-    width: "192px",
-    height: "36px",
-  };
-
   return (
     <Grid container justifyContent="center">
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        sx={{ paddingY: "30px", maxWidth: "1245px" }}
-      >
+      <Root>
         <Grid item>
-          <img src={Clarifion} alt="ClarifionLogo" style={style} />
+          <ClarifionLogo src={Clarifion} alt="ClarifionLogo" />
         </Grid>
         <Grid item>
-          <Grid
-            container
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={4}
-          >
+          <LogoRoot>
             <Grid item>
-              <img src={McAfeeSecure} alt="McAfeeSecureLogo" />
+              <McAfeeSecureLogo src={McAfeeSecure} alt="McAfeeSecureLogo" />
             </Grid>
             <Grid item>
-              <img src={Norton} alt="NortonLogo" />
+              <NortonLogo src={Norton} alt="NortonLogo" />
             </Grid>
-          </Grid>
+          </LogoRoot>
         </Grid>
-      </Grid>
+      </Root>
     </Grid>
   );
 };
