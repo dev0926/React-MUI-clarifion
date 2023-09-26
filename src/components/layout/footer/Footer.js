@@ -1,22 +1,22 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import SecurityIcon from "../../../assets/icons/lock (7) 1.svg";
 import React from "react";
 
 const Footer = () => {
   return (
-    <Box
+    <Grid
+      container
       sx={{
         bgcolor: "#252F3D",
-        height: "84px",
-        width: "100%",
       }}
+      justifyContent="center"
     >
       <Grid
         container
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ paddingTop: "24px", paddingLeft: "127px", paddingRight: "119px" }}
+        sx={{ paddingY: "24px", maxWidth: "1245px" }}
       >
         <Grid item>
           <Grid
@@ -103,7 +103,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 

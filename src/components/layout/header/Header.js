@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import HeaderItem from "./headerItem/HeaderItem";
 import CheckMark from "../../../assets/icons/fluent_checkmark-starburst-20-regular.svg";
@@ -8,19 +8,19 @@ import SyncCheck from "../../../assets/icons/fluent_arrow-sync-checkmark-20-regu
 
 const Header = () => {
   return (
-    <Box
+    <Grid
+      container
       sx={{
         bgcolor: "#252F3D",
-        height: "50px",
-        width: "100%",
       }}
+      justifyContent="center"
     >
       <Grid
         container
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ paddingTop: "15px", paddingX: "127px" }}
+        sx={{ paddingTop: "15px", paddingBottom: "13px", maxWidth: "1245px" }}
       >
         <Grid item>
           <HeaderItem icon={CheckMark} text="30-DAY SATISFACTION GUARANTEE" />
@@ -38,7 +38,7 @@ const Header = () => {
           <HeaderItem icon={SyncCheck} text="100% Money Back Guarantee" />
         </Grid>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 

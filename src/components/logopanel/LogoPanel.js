@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import Clarifion from "../../assets/logo/ca6d33ae7930758c0396996013437236.png";
 import McAfeeSecure from "../../assets/logo/Frame 1484578055.svg";
@@ -11,13 +11,13 @@ const LogoPanel = () => {
   };
 
   return (
-    <Box>
+    <Grid container justifyContent="center">
       <Grid
         container
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ paddingY: "30px", paddingX: "127px" }}
+        sx={{ paddingY: "30px", maxWidth: "1245px" }}
       >
         <Grid item>
           <img src={Clarifion} alt="ClarifionLogo" style={style} />
@@ -39,7 +39,7 @@ const LogoPanel = () => {
           </Grid>
         </Grid>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 
