@@ -1,11 +1,4 @@
-import { CheckCircleSharp } from "@mui/icons-material";
 import { Avatar, Grid, Typography } from "@mui/material";
-
-{
-  /* <CheckCircleSharp
-sx={{ color: "#85BF55", width: "40px", height: "40px" }}
-/> */
-}
 
 const OrderProgressItem = ({ item }) => {
   let icon;

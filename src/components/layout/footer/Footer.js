@@ -8,6 +8,7 @@ const Footer = () => {
       container
       sx={{
         bgcolor: "#252F3D",
+        marginTop: "60px",
       }}
       justifyContent="center"
     >

@@ -27,6 +27,7 @@ const OrderProgress = () => {
 
   return (
     <Grid
+      item
       container
       direction="row"
       justifyContent="space-between"
