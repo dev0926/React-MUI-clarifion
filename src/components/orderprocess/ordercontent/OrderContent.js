@@ -1,23 +1,23 @@
 import { Box, Grid, Typography } from "@mui/material";
-import ProductImage from "../../../../assets/4b81b2e6a429f79dc3a06643582245fb.png";
-import SmallImage from "../../../../assets/be356da38eef349d3173d8e6588e7d74.png";
-import StarIcon from "../../../../assets/icons/ant-design_star-filled.svg";
-import GroupIcon from "../../../../assets/icons/Group 1000001340.svg";
-import GroupIcon2 from "../../../../assets/icons/Group 1000004656.svg";
-import TickCircle from "../../../../assets/icons/tick-circle.svg";
-import Line1 from "../../../../assets/icons/Line 1.svg";
-import Lock from "../../../../assets/icons/lock (7) 2.svg";
-import Visa from "../../../../assets/icons/visa.svg";
-import Shoppay from "../../../../assets/icons/shop pay.svg";
-import Paypal from "../../../../assets/icons/paypal.svg";
-import Mastercard from "../../../../assets/icons/mastercard.svg";
-import Gpay from "../../../../assets/icons/gpay.svg";
-import Apay from "../../../../assets/icons/apple pay.svg";
-import Amex from "../../../../assets/icons/amex.svg";
-import Satisfaction from "../../../../assets/9ab77b5d839615855b972dedd4310061.png";
-import User from "../../../../assets/Rectangle 1127.png";
-import Stars from "../../../../assets/icons/Stars.svg";
-import Verify from "../../../../assets/icons/verify 1.svg";
+import ProductImage from "../../../assets/4b81b2e6a429f79dc3a06643582245fb.png";
+import SmallImage from "../../../assets/be356da38eef349d3173d8e6588e7d74.png";
+import StarIcon from "../../../assets/icons/ant-design_star-filled.svg";
+import GroupIcon from "../../../assets/icons/Group 1000001340.svg";
+import GroupIcon2 from "../../../assets/icons/Group 1000004656.svg";
+import TickCircle from "../../../assets/icons/tick-circle.svg";
+import Line1 from "../../../assets/icons/Line 1.svg";
+import Lock from "../../../assets/icons/lock (7) 2.svg";
+import Visa from "../../../assets/icons/visa.svg";
+import Shoppay from "../../../assets/icons/shop pay.svg";
+import Paypal from "../../../assets/icons/paypal.svg";
+import Mastercard from "../../../assets/icons/mastercard.svg";
+import Gpay from "../../../assets/icons/gpay.svg";
+import Apay from "../../../assets/icons/apple pay.svg";
+import Amex from "../../../assets/icons/amex.svg";
+import Satisfaction from "../../../assets/9ab77b5d839615855b972dedd4310061.png";
+import User from "../../../assets/Rectangle 1127.png";
+import Stars from "../../../assets/icons/Stars.svg";
+import Verify from "../../../assets/icons/verify 1.svg";
 
 const OrderContent = () => {
   return (
