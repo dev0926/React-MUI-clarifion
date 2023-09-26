@@ -15,6 +15,9 @@ import Gpay from "../../../../assets/icons/gpay.svg";
 import Apay from "../../../../assets/icons/apple pay.svg";
 import Amex from "../../../../assets/icons/amex.svg";
 import Satisfaction from "../../../../assets/9ab77b5d839615855b972dedd4310061.png";
+import User from "../../../../assets/Rectangle 1127.png";
+import Stars from "../../../../assets/icons/Stars.svg";
+import Verify from "../../../../assets/icons/verify 1.svg";
 
 const OrderContent = () => {
   return (
@@ -26,9 +29,88 @@ const OrderContent = () => {
       justifyContent="space-between"
       sx={{ maxWidth: "1245px" }}
     >
-      <Grid item container direction="column" sx={{ maxWidth: "575px" }}>
+      <Grid
+        item
+        container
+        direction="column"
+        gap="24px"
+        sx={{ maxWidth: "575px" }}
+      >
         <Grid item>
           <img src={ProductImage} alt="Product" width="575px" height="591px" />
+        </Grid>
+        <Grid item>
+          <Grid container padding="24px" alignItems="flex-start" gap="18px">
+            <Grid item>
+              <Grid container gap="13px" alignItems="center">
+                <Grid item>
+                  <img src={User} alt="Verifed User" />
+                </Grid>
+                <Grid item>
+                  <Grid container gap="7.35px" direction="column">
+                    <Grid item height="12px">
+                      <img src={Stars} alt="Stars" />
+                    </Grid>
+                    <Grid item>
+                      <Grid
+                        container
+                        gap="10px"
+                        alignItems="center"
+                        sx={{ display: "inline-flex" }}
+                      >
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              color: "#333333",
+                              fontFamily: "Manrope",
+                              fontSize: "14px",
+                              fontStyle: "normal",
+                              fontWeight: 700,
+                              lineHeight: "100%",
+                            }}
+                          >
+                            Ken T.
+                          </Typography>
+                        </Grid>
+                        <Grid item>
+                          <img src={Verify} alt="Verified" />
+                        </Grid>
+                        <Grid item>
+                          <Typography
+                            sx={{
+                              color: "#5BB59A",
+                              fontFamily: "Manrope",
+                              fontSize: "12px",
+                              fontStyle: "normal",
+                              fontWeight: 400,
+                              lineHeight: "120%",
+                            }}
+                          >
+                            Verified Customer
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item alignSelf="stretch">
+              <Typography
+                color="#4D5254"
+                fontFamily="Manrope"
+                fontSize="16px"
+                fontStyle="normal"
+                fontWeight="400"
+                lineHeight="150%"
+              >
+                “As soon as the Clarifions arrived I put one in my bedroom. This
+                was late in the afternoon. When I went to the bedroom in the
+                evening it smelled clean. When I went to bed I felt I could
+                breathe better. Wonderful.”
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
       <Grid
