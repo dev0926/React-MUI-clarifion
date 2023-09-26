@@ -566,6 +566,7 @@ const OrderContent = () => {
                     lineHeight: "normal" /* 44.8px */,
                     textDecoration: "underline",
                     textTransform: "uppercase",
+                    cursor: "pointer",
                   }}
                 >
                   No thanks, I don’t want this.

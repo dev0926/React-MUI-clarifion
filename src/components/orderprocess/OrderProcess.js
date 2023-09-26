@@ -6,8 +6,8 @@ import OrderTitle from "./ordertitle/OrderTitle";
 const OrderProcess = () => {
   return (
     <Grid container justifyContent="center">
-      <OrderProgress />
       <OrderTitle />
+      <OrderProgress />
       <OrderContent />
     </Grid>
   );
